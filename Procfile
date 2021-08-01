@@ -1,0 +1,1 @@
+worker: deno run --allow-all --no-check main.ts
