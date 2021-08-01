@@ -15,5 +15,6 @@ client.on('messageCreate', (msg: Message): void => {
 	if (triggers.some((x) => new RegExp(`([^a-zA-Z]|^)${x}([^a-zA-Z]|$)`, 'gim').test(msg.content))) msg.reply(Config.MESSAGE);
 });
 
+console.log(Config);
 // Connect to gateway
 client.connect(Config.TOKEN, [GatewayIntents.GUILD_MESSAGES]);
